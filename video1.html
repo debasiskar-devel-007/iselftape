@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Iselftape</title>
+<link rel="stylesheet"  href="css/mobilebeta.css">
+<script src="js/jquery-1.11.0.js"></script>
+<script src="js/mobilebeta.js"></script>
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" />
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all" />
+<script type="text/javascript">
+	$(window).load(function()
+{
+	mainheight();
+	
+
+});
+
+$(window).resize(function()
+{
+	mainheight();
+});
+
+function mainheight()
+{
+
+var windowHeight = $(window).height();
+
+ 
+ 
+ $(".main-body").css("min-height", windowHeight);
+ 
+ 
+ 
+}
+
+	
+	</script>
+<script type="text/javascript">
+  $(document).ready(function($) {
+    $('#accordion').find('.accordion-toggle').click(function(){
+
+      //Expand or collapse this panel
+      $(this).next().slideToggle('fast');
+
+      //Hide the other panels
+      $(".accordion-content").not($(this).next()).slideUp('fast');
+	   $(".accordion-toggle").removeClass("active");
+	    $(this).addClass("active");
+		
+		
+	   
+
+    });
+  });
+</script>
+
+
+
+</head>
+<body>
+<div data-role="page" class="ui-responsive-panel">
+  <div data-role="header" data-position="fixed">
+    <div class="top-header">
+      <div class="ui-grid-b">
+        <div class="ui-block-a">
+          <div class="ui-bar ui-bar-a"><a href="#nav-panel" data-icon="bars" data-iconpos="notext" class="menu-togale">menu</a></div>
+        </div>
+        <div class="ui-block-b">
+          <div class="ui-bar ui-bar-a" ><img src="images/logo.png" alt="#" class="t-logo"></div>
+        </div>
+        <div class="ui-block-c">
+          <div class="ui-bar ui-bar-a">
+            <div class="search-icon"><a href="#"><img src="images/logout.png" alt="#" class="icon1"></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /header -->
+  <div data-role="content">
+    <div class="main-body">
+      <div class="tb-wrapper">
+        <div id="accordion">
+        
+        
+          <ul>
+          
+          
+          
+            <li>
+              <h4 class="accordion-toggle active "><span class="Sports">Sports </span></h4>
+              <div class="accordion-content default">
+              <div class="block-con">
+              <h6>Cricket </h6>
+              <img src="images/c4.jpeg" alt="#">
+              
+              <a href="#">View More &gt;</a>
+              
+              
+              </div>
+              <div class="block-con">
+              <h6>Cricket </h6>
+              <img src="images/c3.jpg" alt="#">
+              
+              <a href="#">View More &gt;</a>
+              
+              
+              </div>
+              <div class="block-con">
+              <h6>Cricket </h6>
+              <img src="images/c7.jpg" alt="#">
+              
+              <a href="#">View More &gt;</a>
+              
+              
+              </div>
+              
+              <div class="clear"></div>
+              
+              </div>
+            </li>
+            
+            
+            <li>
+              <h4 class="accordion-toggle"><span class="Movie">Movie</span> </h4>
+              <div class="accordion-content">
+                 <div class="block-con">
+              <h6>Movie </h6>
+              <img src="images/m1.jpg" alt="#">
+              
+              <a href="#">View More &gt;</a>
+              
+              
+              </div>
+              <div class="block-con">
+              <h6>Movie </h6>
+              <img src="images/m2.jpg" alt="#">
+              
+              <a href="#">View More &gt;</a>
+              
+              
+              </div>
+              <div class="block-con">
+              <h6>Movie </h6>
+              <img src="images/m3.jpg" alt="#">
+              
+              <a href="#">View More &gt;</a>
+              
+              
+              </div>
+              
+              <div class="clear"></div>
+              </div>
+            </li>
+            
+            
+            <li>
+              <h4 class="accordion-toggle"><span class="Car">Car</span> </h4>
+              <div class="accordion-content">
+                 <div class="block-con">
+              <h6>Car </h6>
+              <img src="images/cr1.jpg" alt="#">
+              
+              <a href="#">View More &gt;</a>
+              
+              
+              </div>
+              <div class="block-con">
+              <h6>Car </h6>
+              <img src="images/cr2.jpg" alt="#">
+              
+              <a href="#">View More &gt;</a>
+              
+              
+              </div><div class="block-con">
+              <h6>Car </h6>
+              <img src="images/cr3.jpg" alt="#">
+              
+              <a href="#">View More &gt;</a>
+              
+              
+              </div>
+              
+              
+              <div class="clear"></div>
+              </div>
+            </li>
+            
+            
+                        <li>
+              <h4 class="accordion-toggle "><span class="Bike">Bike </span> </h4>
+              <div class="accordion-content">
+                 <div class="block-con">
+              <h6>Bike </h6>
+              <img src="images/b1.jpg" alt="#">
+              
+              <a href="#">View More &gt;</a>
+              
+              
+              </div>
+              <div class="block-con">
+              <h6>Bike </h6>
+              <img src="images/b2.jpg" alt="#">
+              
+              <a href="#">View More &gt;</a>
+              
+              
+              </div>
+              <div class="block-con">
+              <h6>Bike </h6>
+              <img src="images/b3.jpg" alt="#">
+              
+              <a href="#">View More &gt;</a>
+              
+              
+              </div>
+              
+              <div class="clear"></div>
+              </div>
+            </li>
+            
+            
+            <li>
+              <h4 class="accordion-toggle"><span class="Computer">Computer</span>  </h4>
+              <div class="accordion-content">
+                 <div class="block-con">
+              <h6>Computer </h6>
+              <img src="images/cm1.jpg" alt="#">
+              
+              <a href="#">View More &gt;</a>
+              
+              
+              </div>
+              <div class="block-con">
+              <h6>Computer </h6>
+              <img src="images/cm2.jpg" alt="#">
+              
+              <a href="#">View More &gt;</a>
+              
+              
+              </div>
+              <div class="block-con">
+              <h6>Computer </h6>
+              <img src="images/cm3.jpg" alt="#">
+              
+              <a href="#">View More &gt;</a>
+              
+              
+              </div>
+              
+              <div class="clear"></div>
+              </div>
+            </li>
+            
+            
+            <li>
+              <h4 class="accordion-toggle"><span class="Mobile">Mobile</span> </h4>
+              <div class="accordion-content">
+                 <div class="block-con">
+              <h6>Mobile </h6>
+              <img src="images/mb1.jpg" alt="#">
+              
+              <a href="#">View More &gt;</a>
+              
+              
+              </div>
+              <div class="block-con">
+              <h6>Mobile </h6>
+              <img src="images/mb2.jpg" alt="#">
+              
+              <a href="#">View More &gt;</a>
+              
+              
+              </div>
+              <div class="block-con">
+              <h6>Mobile </h6>
+             <img src="images/mb3.jpg" alt="#">
+              
+              <a href="#">View More &gt;</a>
+              
+              
+              </div>
+              
+              <div class="clear"></div>
+              </div>
+            </li>
+            
+              <li>
+              <h4 class="accordion-toggle"><span class="Animation">Animation</span> </h4>
+              <div class="accordion-content">
+                 <div class="block-con">
+              <h6>Animation </h6>
+              <img src="images/an1.jpg" alt="#">
+              
+              <a href="#">View More &gt;</a>
+              
+              
+              </div>
+              <div class="block-con">
+              <h6>Animation </h6>
+              <img src="images/an2.jpg" alt="#">
+              
+              <a href="#">View More &gt;</a>
+              
+              
+              </div>
+              <div class="block-con">
+              <h6>Animation </h6>
+             <img src="images/an3.jpg" alt="#">
+              
+              <a href="#">View More &gt;</a>
+              
+              
+              </div>
+              
+              <div class="clear"></div>
+              </div>
+            </li>
+            
+            
+              <li>
+              <h4 class="accordion-toggle"><span class="Music">Music </span></h4>
+              <div class="accordion-content">
+                 <div class="block-con">
+              <h6>Music </h6>
+              <img src="images/ms1.jpg" alt="#">
+              
+              <a href="#">View More &gt;</a>
+              
+              
+              </div>
+              <div class="block-con">
+              <h6>Music </h6>
+             <img src="images/ms2.jpg" alt="#">
+              
+              <a href="#">View More &gt;</a>
+              
+              
+              </div>
+              <div class="block-con">
+              <h6>Music </h6>
+             <img src="images/ms3.jpg" alt="#">
+              
+              <a href="#">View More &gt;</a>
+              
+              
+              </div>
+              
+              <div class="clear"></div>
+              </div>
+            </li>
+            
+            
+               <li>
+              <h4 class="accordion-toggle"><span class="Travel">Travel  </span> </h4>
+              <div class="accordion-content">
+                 <div class="block-con">
+              <h6>Travel </h6>
+              <img src="images/tv1.jpg" alt="#">
+              
+              <a href="#">View More &gt;</a>
+              
+              
+              </div>
+              <div class="block-con">
+              <h6>Travel </h6>
+                 <img src="images/tv2.jpg" alt="#">
+              
+              <a href="#">View More &gt;</a>
+              
+              
+              </div>
+              <div class="block-con">
+              <h6>Travel </h6>
+               <img src="images/tv3.jpg" alt="#">
+              
+              <a href="#">View More &gt;</a>
+              
+              
+              </div>
+              
+              <div class="clear"></div>
+              </div>
+            </li>
+            
+            
+             <li>
+              <h4 class="accordion-toggle"><span class="Shopping">Shopping </span></h4>
+              <div class="accordion-content">
+                 <div class="block-con">
+              <h6>Shopping </h6>
+              <img src="images/sp1.jpg" alt="#">
+              
+              <a href="#">View More &gt;</a>
+              
+              
+              </div>
+              <div class="block-con">
+              <h6>Shopping </h6>
+              <img src="images/sp2.jpg" alt="#">
+              
+              <a href="#">View More &gt;</a>
+              
+              
+              </div>
+              <div class="block-con">
+              <h6>Shopping </h6>
+               <img src="images/sp3.jpg" alt="#">
+              
+              <a href="#">View More &gt;</a>
+              
+              
+              </div>
+              
+              <div class="clear"></div>
+              </div>
+            </li>
+            
+            
+             <li>
+              <h4 class="accordion-toggle"><span class="Food">Food  </span></h4>
+              <div class="accordion-content">
+                 <div class="block-con">
+              <h6>Food </h6>
+              <img src="images/f1.jpg" alt="#">
+              
+              <a href="#">View More &gt;</a>
+              
+              
+              </div>
+              <div class="block-con">
+              <h6>Food </h6>
+               <img src="images/f2.jpg" alt="#">
+              
+              <a href="#">View More &gt;</a>
+              
+              
+              </div>
+              <div class="block-con">
+              <h6>Food </h6>
+               <img src="images/f3.jpg" alt="#">
+              
+              <a href="#">View More &gt;</a>
+              
+              
+              </div>
+              
+              <div class="clear"></div>
+              </div>
+            </li>
+            
+            
+               <li>
+              <h4 class="accordion-toggle"><span class="Estate">Real Estate</span>  </h4>
+              <div class="accordion-content">
+                 <div class="block-con">
+              <h6>Real Estate </h6>
+              <img src="images/re1.jpg" alt="#">
+              
+              <a href="#">View More &gt;</a>
+              
+              
+              </div>
+              <div class="block-con">
+              <h6>Real Estate </h6>
+              <img src="images/re2.jpg" alt="#">
+              
+              <a href="#">View More &gt;</a>
+              
+              
+              </div>
+              <div class="block-con">
+              <h6>Real Estate </h6>
+             <img src="images/re3.jpg" alt="#">
+              
+              <a href="#">View More &gt;</a>
+              
+              
+              </div>
+              
+              <div class="clear"></div>
+              </div>
+            </li>
+            
+            
+            
+            
+            
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /content -->
+  <div data-role="panel" data-position="left" data-position-fixed="false" data-display="reveal" id="nav-panel" data-theme="a">
+    <ul data-role="listview" data-theme="a" data-divider-theme="a" style="margin-top:-16px;" class="nav-search">
+      <li data-filtertext="wai-aria voiceover accessibility screen reader"> <a href="#">Accessibility</a> </li>
+      <li data-filtertext="accordions collapsible set collapsible-set collapsed"> <a href="#">Accordions</a> </li>
+      <li data-filtertext="ajax navigation model"> <a href="#">Ajax navigation model</a> </li>
+      <li data-filtertext="anatomy of page viewport"> <a href="#">Anatomy of a page</a> </li>
+      <li data-filtertext="events api animationComplete transition css"> <a href="#">Animation events</a> </li>
+      <li data-filtertext="listview autodivider"> <a href="#">Automatic listview dividers</a> </li>
+      <li data-filtertext="button link submit cancel image reset mini buttonmarkup enable disable"> <a href="#">Buttons</a> </li>
+      <li data-filtertext="button icon"> <a href="#">Button icons</a> </li>
+      <li data-filtertext="data-prefetch loadpage domCache data-dom-cache size clear cleanup pagehide lazyload spinner loader"> <a href="#">Caching pages</a> </li>
+      <li data-filtertext="input forms multi select checkbox checks grouped horizontal toggle legend"> <a href="#">Checkbox</a> </li>
+      <li data-filtertext="button icon"> <a href="#">Button icons</a> </li>
+      <li data-filtertext="data-prefetch loadpage domCache data-dom-cache size clear cleanup pagehide lazyload spinner loader"> <a href="#">Caching pages</a> </li>
+      <li data-filtertext="input forms multi select checkbox checks grouped horizontal toggle legend"> <a href="#">Checkbox</a> </li>
+    </ul>
+    <!-- panel content goes here -->
+  </div>
+  <!-- /panel -->
+  <!-- /panel -->
+</div>
+<!-- /page -->
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Iselftape</title>
+<link rel="stylesheet"  href="css/mobilebeta.css">
+<script src="js/jquery-1.11.0.js"></script>
+<script src="js/mobilebeta.js"></script>
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" />
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all" />
+<script type="text/javascript">
+	$(window).load(function()
+{
+	mainheight();
+	
+
+});
+
+$(window).resize(function()
+{
+	mainheight();
+});
+
+function mainheight()
+{
+
+var windowHeight = $(window).height();
+
+ 
+ 
+ $(".main-body").css("min-height", windowHeight);
+ 
+ 
+ 
+}
+
+	
+	</script>
+
+
+
+
+        
+       <link href="css/video-js.css" rel="stylesheet" type="text/css">
+  <!-- video.js must be in the <head> for older IEs to work. -->
+  <script src="js/video.js"></script>
+
+  <!-- Unless using the CDN hosted version, update the URL to the Flash SWF -->
+  <script>
+    videojs.options.flash.swf = "video-js.swf";
+  </script>
+           <link rel="stylesheet" href="css/progressbar.css">
+           <script src="js/progressbar.js"></script>
+  
+    <script>
+  $(function() {
+      
+      var i=0;
+      
+      $("#putval").keyup(function(){
+                 i= $(this).val();
+         //alert($(this).val());
+          $('button').click();
+          
+});
+           //alert($('#putval').val());
+     //var i=$('#putval').val();
+    $( "#progressbar" ).progressbar({
+      value: false
+    });
+    $( "button" ).on( "click", function( event ) {
+        //alert(i);
+       /* if(i==100){
+            i=0;
+        }
+        else {
+        i=i+10;
+        }      */
+        //i=i+1;
+      var target = $( event.target ),
+        progressbar = $( "#progressbar" ),
+        progressbarValue = progressbar.find( ".ui-progressbar-value" );
+ 
+      if ( target.is( "#numButton" ) ) {
+        progressbar.progressbar( "option", {
+          value:Math.floor((i/30)*100)
+        });
+        
+        $('.remainval').text(30-i+' remaining');
+      } 
+    });
+    
+    
+  });
+  </script>
+   
+ <style>
+ .video-js {padding-top: 56.25%}
+.vjs-fullscreen {padding-top: 0px}
+@media only screen and (max-width:599px) {
+    .vjs-default-skin .vjs-big-play-button {left:25%;top:25%;width:50%;height:50%;}
+}
+@media only screen and (min-width:600px) and (max-width:768px) {
+    .vjs-default-skin .vjs-big-play-button {left:25%;top:25%;width:50%;height:50%;font-size:5em;}
+}
+
+
+</style> 
+</head>
+<body>
+<div data-role="page" class="ui-responsive-panel"> 
+  <div data-role="header" data-position="fixed">
+  <div class="top-header">   
+<div class="ui-grid-b">
+    <div class="ui-block-a"><div class="ui-bar ui-bar-a"><img src="images/arrowl.png" alt="#" style="width:18px; float:left; margin-top:6px; margin-right:10px;"><a href="#nav-panel" data-icon="bars" data-iconpos="notext" class="menu-togale">menu</a> </div></div>
+    <div class="ui-block-b"><div class="ui-bar ui-bar-a" ><img src="images/logo.png" alt="#" class="t-logo"></div></div>
+    <div class="ui-block-c"><div class="ui-bar ui-bar-a"><div class="search-icon"><img src="images/arrowr.png" alt="#" style="width:18px; float:right; margin-top:6px;"></div></div>
+</div>
+        </div>
+        
+        </div>      
+   </div>
+  <!-- /header -->
+  <div data-role="content"> 
+    <div class="main-body"> 
+      <div class="tb-wrapper">  
+        <div id="video-Detail" style="padding:4%; width:82%;"> 
+
+           
+
+                    
+                    <div class="panel">
+                    <div class="article-post">
+
+<video id="example_video_1" class="video-js vjs-default-skin vjs-big-play-centered video-js-fullscreen"
+  controls preload="auto" width="100%" height="300"
+  poster="http://video-js.zencoder.com/oceans-clip.png"
+data-setup='{ "example_option": true, "width": "auto", "height": "auto", "techOrder": ["html5","flash"] }'>
+ <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+ <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+ <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+ <p class="vjs-no-js">To view this video please enable JavaScript, and use a browser like chrome that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+</video>
+              </div>
+                    </div>
+                 
+   
+  
+          
+          
+<div style="clear:both;"></div>
+
+<div class="text-contain">
+<h2>Lorem Ipsum is simply dummy  </h2>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+
+</div>
+
+
+<div class="videoname-box" >
+
+<label>Emil Id: </label>
+         <div class="videoname">
+         <input type="text" placeholder="emilid@mail.com">
+          </div>
+         </div>
+         
+         <div class="videoname-box" >
+         
+            <label>Message: </label>   
+         <div class="videoname">
+        
+   
+         <textarea placeholder="www.link.com"></textarea>
+          </div>
+         </div>
+         
+         
+         <div class="send-btn ">
+          
+           <input type="submit"  value="send">
+        
+         </div>
+
+          
+        </div> 
+      </div> 
+    </div> 
+  </div> 
+  <!-- /content -->
+  <div data-role="panel" data-position="left" data-position-fixed="false" data-display="reveal" id="nav-panel" data-theme="a">
+    <ul data-role="listview" data-theme="a" data-divider-theme="a" style="margin-top:-16px;" class="nav-search">
+      <li data-filtertext="wai-aria voiceover accessibility screen reader"> <a href="#">Accessibility</a> </li>
+      <li data-filtertext="accordions collapsible set collapsible-set collapsed"> <a href="#">Accordions</a> </li>
+      <li data-filtertext="ajax navigation model"> <a href="#">Ajax navigation model</a> </li>
+      <li data-filtertext="anatomy of page viewport"> <a href="#">Anatomy of a page</a> </li>
+      <li data-filtertext="events api animationComplete transition css"> <a href="#">Animation events</a> </li>
+      <li data-filtertext="listview autodivider"> <a href="#">Automatic listview dividers</a> </li>
+      <li data-filtertext="button link submit cancel image reset mini buttonmarkup enable disable"> <a href="#">Buttons</a> </li>
+      <li data-filtertext="button icon"> <a href="#">Button icons</a> </li>
+      <li data-filtertext="data-prefetch loadpage domCache data-dom-cache size clear cleanup pagehide lazyload spinner loader"> <a href="#">Caching pages</a> </li>
+      <li data-filtertext="input forms multi select checkbox checks grouped horizontal toggle legend"> <a href="#">Checkbox</a> </li>
+      <li data-filtertext="button icon"> <a href="#">Button icons</a> </li>
+      <li data-filtertext="data-prefetch loadpage domCache data-dom-cache size clear cleanup pagehide lazyload spinner loader"> <a href="#">Caching pages</a> </li>
+      <li data-filtertext="input forms multi select checkbox checks grouped horizontal toggle legend"> <a href="#">Checkbox</a> </li>
+    </ul>
+    <!-- panel content goes here -->
+  </div>
+  <!-- /panel -->
+  <!-- /panel -->
+</div>
+<!-- /page -->
+</body>
+</html>

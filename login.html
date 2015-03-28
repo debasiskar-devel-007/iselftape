@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Iselftape</title>
+     
+		<link rel="stylesheet"  href="css/mobilebeta.css">
+		
+		<script src="js/jquery-1.11.0.js"></script>
+	
+		<script src="js/mobilebeta.js"></script>
+        
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" />
+            <link href="css/style.css" type="text/css" rel="stylesheet" media="all" />
+            
+            <script type="text/javascript">
+	$(window).load(function()
+{
+	mainheight();
+	
+
+});
+
+$(window).resize(function()
+{
+	mainheight();
+});
+
+function mainheight()
+{
+
+var windowHeight = $(window).height();
+
+ 
+ 
+ $(".main-body").css("min-height", windowHeight);
+ 
+  var loginheight = $('.login-page').height();
+  
+  var blheight = parseInt(windowHeight-loginheight);
+  
+   var maintop = parseInt(blheight / 2);
+   
+    $(".login-page").css("margin-top", maintop);
+ 
+ 
+}
+
+	
+	</script>
+        
+        
+	</head>
+	<body>
+		<div data-role="page" class="ui-responsive-panel"> 
+
+			
+            
+            <div data-role="header" data-position="fixed">
+  <div class="top-header">   
+<div class="ui-grid-b">
+    <div class="ui-block-a"><div class="ui-bar ui-bar-a"><img src="images/arrowl.png" alt="#" style="width:18px; float:left; margin-top:6px; margin-right:10px;"><a href="#nav-panel" data-icon="bars" data-iconpos="notext" class="menu-togale">menu</a> </div></div>
+    <div class="ui-block-b"><div class="ui-bar ui-bar-a" ><img src="images/logo.png" alt="#" class="t-logo"></div></div>
+    <div class="ui-block-c"><div class="ui-bar ui-bar-a"><div class="search-icon"><img src="images/arrowr.png" alt="#" style="width:18px; float:right; margin-top:6px;"></div></div>
+</div>
+        </div>
+        
+        </div>      
+   </div>
+            
+            <!-- /header -->
+			<div data-role="content">
+          <div class="main-body">
+          
+          <div class="tb-wrapper">
+         
+           <div class="login-page">
+            
+              <h2>USER LOGIN</h2>
+            
+         <div class="login-box">
+         
+         <div class="email" >
+         <div class="emaildiv">
+         <input type="text" placeholder="Email">
+          </div>
+         </div>
+           <div class="Password" >
+           <div class="Passworddiv">
+         <input type="password"  placeholder="Password">
+         
+          </div>
+         </div>
+           
+        
+           
+           
+           
+           </div> 
+           
+           <div class="login-btn">
+          
+           <input type="submit"  value="LOGIN">
+        
+         </div>   
+        
+        
+        <div class="login-footer">
+        <span><a href="#">Forgot Password</a></span>
+         <label>Not a member? <a href="#">sign up </a>here</label>
+        
+        </div>
+        
+        
+       
+          
+         </div>   
+          
+        </div>
+
+    </div><!-- /content -->
+
+	
+			</div><!-- /page -->
+			
+		
+				<div data-role="panel" data-position="left" data-position-fixed="false" data-display="reveal" id="nav-panel" data-theme="a">
+
+					<ul data-role="listview" data-theme="a" data-divider-theme="a" style="margin-top:-16px;" class="nav-search">
+						
+						<li data-filtertext="wai-aria voiceover accessibility screen reader">
+							<a href="#">Accessibility</a>
+						</li>
+						<li data-filtertext="accordions collapsible set collapsible-set collapsed">
+							<a href="#">Accordions</a>
+						</li>
+						<li data-filtertext="ajax navigation model">
+							<a href="#">Ajax navigation model</a>
+						</li>
+						<li data-filtertext="anatomy of page viewport">
+							<a href="#">Anatomy of a page</a>
+						</li>
+						<li data-filtertext="events api animationComplete transition css">
+							<a href="#">Animation events</a>
+						</li>
+						<li data-filtertext="listview autodivider">
+							<a href="#">Automatic listview dividers</a>
+						</li>
+						<li data-filtertext="button link submit cancel image reset mini buttonmarkup enable disable">
+							<a href="#">Buttons</a>
+						</li>
+						<li data-filtertext="button icon">
+							<a href="#">Button icons</a>
+						</li>
+						<li data-filtertext="data-prefetch loadpage domCache data-dom-cache size clear cleanup pagehide lazyload spinner loader">
+							<a href="#">Caching pages</a>
+						</li>
+						<li data-filtertext="input forms multi select checkbox checks grouped horizontal toggle legend">
+							<a href="#">Checkbox</a>
+						</li>
+						<li data-filtertext="button icon">
+							<a href="#">Button icons</a>
+						</li>
+						<li data-filtertext="data-prefetch loadpage domCache data-dom-cache size clear cleanup pagehide lazyload spinner loader">
+							<a href="#">Caching pages</a>
+						</li>
+						<li data-filtertext="input forms multi select checkbox checks grouped horizontal toggle legend">
+							<a href="#">Checkbox</a>
+						</li>
+					</ul>
+
+					<!-- panel content goes here -->
+				</div><!-- /panel -->
+
+		
+				<!-- /panel -->
+				
+		
+       </div>
+	</body>
+</html>
